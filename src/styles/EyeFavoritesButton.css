@@ -1,0 +1,23 @@
+button{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor:pointer;
+}
+
+
+
+.eye-container {
+    display: flex;    
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .loading-container  {
+   padding: 0 10px; 
+  }
+
+ 

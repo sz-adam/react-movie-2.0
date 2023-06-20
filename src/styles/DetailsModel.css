@@ -1,0 +1,132 @@
+.modalContainer {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.ModalWrapper {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: rgb(207, 207, 207);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+  z-index: 10;
+ max-width: 1000px;
+  height: 500px;
+  animation-name: modalIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes modalIn {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 30px;
+  }
+}
+
+
+
+.ModalImg {
+  border-radius: 10px 0 0 10px;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.ModalContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e293b;
+
+}
+.ModalContent p{
+  padding: 5px 0;
+}
+
+.ModalTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ModalSubtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+
+.ModalDescription {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ModalInfo {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ModalButton {
+  background: #000;
+  color: #c21c1c;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  bottom: 0;
+  margin-top: 4rem;
+  font-weight: bold;
+  box-shadow: inset 0 0 0 0 #e9e9e9; 
+  transition: ease-out 0.8s;
+}
+
+.ModalButton:hover {
+  box-shadow: inset 200px 0 0 0 #cacaca;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  .ModalWrapper {
+
+   max-height: 90%;
+  max-width: 90%;   
+  
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .ModalWrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    max-width: 70%;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+  .ModalWrapper {  
+    max-width: 80%;
+  }
+
+
+}
+
